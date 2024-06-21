@@ -27,9 +27,9 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)***
-   https://github.com/Onigiri2-2324/OSProject
+   __(https://github.com/Onigiri2-2324/OSProject)__.
 3. How many files and folders are in this repository. ***(1 mark)***
-   1 file and 1 folder.
+   __1 file and 1 folder__.
 
 
 ## Exploring github codespaces
@@ -61,9 +61,9 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Ubuntu Linux image__.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __8 GB RAM, and 32 GB storage, up to 32 cores, 64 GB RAM, and 128 GB storage__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Each commit can track changes of the project and revert to previous states__.
 
 ## Exploring the Terminal
 
