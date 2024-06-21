@@ -1,6 +1,6 @@
 # OSProject Running Containers for Application Development
 
-Group Name: __Fill your team name__. 
+Group Name: Onigiri
 
 Section: __Fill your class section__. 
 
