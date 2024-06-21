@@ -1,4 +1,4 @@
-![image](https://github.com/Onigiri2-2324/OSProject/assets/173468972/78092478-a61b-4464-8f00-97b4ba963773)# OSProject Running Containers for Application Development
+# OSProject Running Containers for Application Development
 
 Group Name: Onigiri
 
