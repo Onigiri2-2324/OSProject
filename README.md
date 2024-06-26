@@ -70,7 +70,7 @@ Team Mates:
 1. Look at the TERMINAL tab. Explore and run commands according to the questions below. 
 2. You can include your answers as images, or cut and paste the output here. If you are cutting and pasting your answers, wrap your answers in the codeblock clause in markdown. For example, if i run the command **whoami** the the output would look like the one below.
 ```bash
-@joeynor ➜ /workspaces/OSProject (main) $ whoami 
+@Onigiri2-2324 ➜ /workspaces/OSProject (main) $ whoami 
 codespace
 ```
 
@@ -409,29 +409,37 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 2. Create a file in /root on the container, the files should also appear in myroot of your host VM.
 
 ```bash 
-@joeynor ➜ /workspaces/OSProject (main) $ mkdir myroot
-@joeynor ➜ /workspaces/OSProject (main) $ cd myroot/
-@joeynor ➜ /workspaces/OSProject/myroot (main) $ pwd
+@Onigiri2-2324 ➜ /workspaces/OSProject (main) $ mkdir myroot
+@Onigiri2-2324 ➜ /workspaces/OSProject (main) $ cd myroot/
+@Onigiri2-2324 ➜ /workspaces/OSProject/myroot (main) $ pwd
 /workspaces/OSProject/myroot
 
-@joeynor ➜ /workspaces/OSProject/myroot (main) $ docker run --detach -it -v /workspaces/OSProject/myroot:/root debian
+@Onigiri2-2324 ➜ /workspaces/OSProject/myroot (main) $ docker run --detach -it -v /workspaces/OSProject/myroot:/root debian
 ```
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __-rw-r--r-- 1 root root 0 Jun 26 12:34 testfile.txt; user: root, group: root__.
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+*** __-rw-r--r-- 1 codespace codespace 0 Jun 26 12:34 testfile.txt__.***
 
 ## You are on your own, create your own static webpage
 
 1. Create a directory called webpage in your host machine
+```bash 
+@Onigiri2-2324 ➜ /workspaces/OSProject/myroot (main) $ mkdir webpage
+```
+
 2. Inside the directory, create a page index.html, with any content you would like
+```bash 
+@Onigiri2-2324 ➜ /workspaces/OSProject/myroot (main) $ echo "helloworld.txt" > webpage/index.html
+```
+
 3. Then, run the apache webserver and mount the webpage directory to it. Hint:
 ```bash
 ## the -p 8080:80 flag points the host port 8080 to the container port 80
@@ -452,9 +460,9 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __permissions drwxr-xr-x, and it is owned by the user root and group root.__.
+2. What port is the apache web server running. ***(1 mark)*** __port 80__.
+3. What port is open for http protocol on the host machine? ***(1 mark)*** __port 8080__.
 
 ## Create SUB Networks
 
