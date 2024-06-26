@@ -482,7 +482,16 @@ docker run -itd --net rednet --name c2 busybox sh
 ***Questions:***
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __<br>BusyBox is a software suite that provides many common Unix utilities in a single small executable. The --name switch assigns a custom name to the container.__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
+```bash
+@Onigiri2-2324 ➜ /workspaces/OSProject (main) $ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+8f3fcb2905d3   bluenet   bridge    local
+88227c9c2529   bridge    bridge    local
+f2f3b3129c2e   host      host      local
+3828ceaffd48   none      null      local
+589bb249d33a   rednet    bridge    local
+```
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
 4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
 5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
