@@ -529,7 +529,7 @@ PING c2 (172.20.0.3): 56 data bytes
 64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.055 ms
 ```
 2. What is different from the previous ping in the section above? ***(1 mark)*** 
-__<br>Answer: In the previous attempt, c1 could not ping c2 because they were on separate networks. After connecting both containers to the bridgenet network, c1 can now successfully ping c2, demonstrating connectivity across the bridged networks.__.
+__<br>In the previous attempt, c1 could not be ping c2 because they were on separate networks. After connecting both containers to the bridgenet network, c1 can now successfully ping c2, demonstrating connectivity across the bridged networks.__.
 
 ## Intermediate Level (10 marks bonus)
 
