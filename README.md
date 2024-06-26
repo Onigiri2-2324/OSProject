@@ -514,8 +514,22 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)*** 
+__<br>Answer: Yes__.
+```bash
+@Onigiri2-2324 ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.155 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.067 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.066 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.051 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.063 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.051 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.055 ms
+64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.055 ms
+```
+2. What is different from the previous ping in the section above? ***(1 mark)*** 
+__<br>Answer: In the previous attempt, c1 could not ping c2 because they were on separate networks. After connecting both containers to the bridgenet network, c1 can now successfully ping c2, demonstrating connectivity across the bridged networks.__.
 
 ## Intermediate Level (10 marks bonus)
 
