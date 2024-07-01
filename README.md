@@ -672,7 +672,7 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)***
+1. What is the output of step 5 above, explain the error? ***(1 mark)***<br>
 __The output would likely be an error indicating that the Node.js application cannot connect to the MySQL database. This is because the Node.js container and the MySQL container are on separate networks and cannot communicate with each other until they are bridged.__.
 ![Screenshot 2024-07-01 190828](https://github.com/Onigiri2-2324/OSProject/assets/173468972/cf8e520f-cd0b-49dd-ab4c-e9852c858f71)
 ![Screenshot (42)](https://github.com/Onigiri2-2324/OSProject/assets/173468972/b43b8b12-617b-4c2d-82ee-fe39f285dd5e)
